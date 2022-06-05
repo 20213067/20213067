@@ -2,6 +2,11 @@
 ---
 ### 리눅스명령어
 **1) top : 시스템 사용량을 실시간으로 확인**
+
+**<실행결과>**
+
+<img src="https://user-images.githubusercontent.com/106874873/172054690-b24364ab-8821-4164-ac48-0faf161bf1ca.PNG" width="50%" height="50%">
+
 - -b : 배치모드로 정보를 출력 
      : 실시간 상화 대화형모드로 정보를 화면에 일렬로 출력
 - -n : top 실행 주기를 2번 반복
@@ -9,6 +14,11 @@
 - -s : 몇 개의 대화식 명령을 비활성화
 
 **2) ps : 현재 실행중인 프로세스 목록을 확인, 프로세스의 기본적인 내용만 출력**
+
+**<실행결과>**
+
+<img src="https://user-images.githubusercontent.com/106874873/172055056-f1dfcbcc-7b5d-4665-a6ce-04da04e2d97d.PNG" width="50%" height="50%">
+
 - -e : 모든 프로세스를 출력
 - -f : 풀 포맷으로 출력(uid, pid, ppid, TTY 등 정보를 보여줌)
 - -l : 긴 포맷으로 출력(풀 포맷 + F, S, PRI등 정보를 더 보여줌)
@@ -16,12 +26,22 @@
 
 **3) jobs : 작업이 중지된 상태, 백그라운드로 진행 중인 작업 상태, 
 변경 되었지만 보고되지 않은 상태 등을 표시하는 명령어**
+
+**<실행결과>**
+
+<img src="https://user-images.githubusercontent.com/106874873/172055420-f3faf2af-5e05-44a3-83e9-bcd921451f39.PNG" width="50%" height="50%">
+
 - -l : 프로세스 그룹 ID를 state 필드 앞에 출력
 - -n : 프로세스 그룹 중에 대표 프로세스 ID를 출력
 - -p : 각 프로세스 ID에 대해 한 행씩 출력
 - command : 지정한 명령어를 실행
 
 **4) kill : 프로세스를 죽일 때 사용, 내부적으로는 프로세스에 시그널을 보내 원하는 작업을 하게 하는 명령어**
+
+**<실행결과>**
+
+<img src="https://user-images.githubusercontent.com/106874873/172055709-ca109de1-54dd-4835-910e-1235fde652b4.PNG" width="80%" height="80%">
+
 - -s : 전달할 시그널의 종류를 지정(여기에는 시그널 이름이나 번호를 써준다.)
 - -l : 시그널로 사용할 수 있는 시그널 이름들을 보여줌
     (이것은 /usr/include/linux/signal.h 파일에서도 알 수 있다.)
